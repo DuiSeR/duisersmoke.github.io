@@ -1,0 +1,239 @@
+body {
+  background: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1300px;
+  margin: auto;
+}
+.logo_elf {
+  width: 200px;
+}
+.menu {
+  width: 40%;
+}
+.menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style-type: none;
+  gap: 50px;
+}
+.menu_list li {
+  list-style-type: none;
+}
+
+.menu_list a {
+  text-decoration: none;
+  color: rgb(246, 246, 246);
+  list-style-type: none;
+}
+.row-item {
+  position: relative;
+}
+.row-item div {
+  position: absolute;
+  transform: translateY(15px);
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  padding-top: 20px;
+}
+.row-item ul {
+  position: relative;
+  transform: translateY(15px);
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 15px;
+  padding: 12px 20px;
+  width: 165px;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #01b972;
+}
+.row-item li {
+  position: relative;
+  padding: 7px 0;
+}
+.row-item a:hover {
+  color: #01b972;
+  transition-duration: 0.3s;
+}
+.row-item a {
+  color: rgb(239, 239, 239);
+}
+
+.row-item:hover div {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.row-item:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.pop::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  height: 15px;
+}
+
+.menu-item {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 20px;
+  border: 1px solid #01b972;
+  border-radius: 5px;
+  padding: 10px;
+}
+.menu-item2 {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.menu-item2::after {
+  content: ">";
+  display: inline-block;
+  margin-left: 3px;
+  font-stretch: extra-condensed;
+  font-size: 70%;
+  font-weight: bolder;
+  transform: rotate(90deg);
+}
+.icon {
+  width: 32px;
+}
+.menu-right {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.telegram {
+  display: flex;
+  align-items: center;
+}
+.telegram img {
+  width: 32px;
+}
+.width {
+  width: 20px;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.phone a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+  font-family: math;
+  padding: 0 10px;
+}
+.phone a:hover {
+  color: #01b972;
+  transition-duration: 0.3s;
+}
+.search.wishlist {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search.wishlist img {
+  width: 30px;
+}
+.search.wishlist img:hover {
+  filter: brightness(75%);
+}
+.wishlist-in-buttom {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.wishlist-in-buttom span {
+  background-color: orange;
+  border-radius: 50%;
+  width: 15px;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+  z-index: 1;
+  text-align: center;
+  line-height: 15px;
+}
+.wishlist-buttom {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.basket-buttom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Gill Sans", sans-serif;
+  text-decoration: none;
+  height: 22.4px;
+  border-radius: 5px;
+  border: 1px solid #01b972;
+  padding: 10px;
+}
+
+.zero {
+  position: relative;
+}
+.zero span {
+  background-color: orange;
+  border-radius: 50%;
+  width: 15px;
+  position: absolute;
+  top: -18px;
+  right: 1px;
+  z-index: 1;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+}
+.logo-bastet-right {
+  color: rgb(246, 246, 246);
+  font-size: 20px;
+  height: 22.4px;
+}
+main {
+  width: 1300px;
+  /* display: flex;
+  justify-content: center; */
+  margin: auto;
+}
+.tabs-header {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.new-things {
+  width: 100%;
+}
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 240px;
+}
